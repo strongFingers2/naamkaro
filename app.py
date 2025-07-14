@@ -125,7 +125,7 @@ def generate_next(context):
     return ''.join(itos[i] for i in out)
 # Streamlit UI
 st.title("🧠 AI Name Generator")
-st.write("Enter the starting letters (minimum 4 characters):")
+st.write("Enter the starting letters (minimum 3 characters):")
 
 user_input = st.text_input("Prefix", max_chars=20)
 CONTEXT_LENGTH = block_size
